@@ -6,5 +6,18 @@
   "action": {
     "default_popup": "./popup/index.html",
     "default_icon": "./assets/visuals/icons/main-logo/vector-theme-1.png"
-  }
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://youtube.com",
+    "https://snapchat.com",
+    "https://instagram.com"
+  ],
+  "optional_host_permissions":[
+    "https://*/*",
+    "http://*/*"
+  ]
 }

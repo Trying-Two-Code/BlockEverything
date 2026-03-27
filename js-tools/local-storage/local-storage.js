@@ -1,0 +1,1 @@
+let settings = localStorage.getItem("settings");
