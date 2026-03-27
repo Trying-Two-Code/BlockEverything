@@ -1,0 +1,7 @@
+{
+    "social-media-urls": {
+        "youtube": "https://youtube.com/*",
+        "snapchat": "https://snapchat.com/*",
+        "instagram": "https://instagram.com/*"
+    }
+}

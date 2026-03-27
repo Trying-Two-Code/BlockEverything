@@ -2,8 +2,6 @@ window.browserData = window.data || {};
 
 window.browserData.findURL = async () => {
     try{
-        console.log("finding browser");
-
         let queryOptions = { active: true, lastFocusedWindow: true };
         let [tab] = await chrome.tabs.query(queryOptions);
 
@@ -18,5 +16,4 @@ window.browserData.findURL = async () => {
         console.error(error);
         return error;
     }
-    
 };
