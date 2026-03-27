@@ -12,9 +12,9 @@
     "tabs"
   ],
   "host_permissions": [
-    "https://youtube.com",
-    "https://snapchat.com",
-    "https://instagram.com"
+    "https://youtube.com/*",
+    "https://snapchat.com/*",
+    "https://instagram.com/*"
   ],
   "optional_host_permissions":[
     "https://*/*",
