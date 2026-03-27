@@ -1,6 +1,6 @@
 # Overview
 
-This is open source, (MIT liscense). To contribute, be sure to follow the rules. 
+This is open source, (MIT license). To contribute, be sure to follow the rules. 
 
 # The rules
 
