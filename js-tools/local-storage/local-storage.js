@@ -23,6 +23,13 @@ let changeLocalSetting = (newSettingsObject = {}) => {
     setLocalSetting(returnNewSettings);
 }
 
+window.localSetting = window.localSetting || {};
+
 window.localSetting.changeLocalSetting = (newSettingsObject = {}) => {
     changeLocalSetting(newSettingsObject);
+}
+
+window.localSetting.getLocalSetting = (settingString) => {
+    let currentSettings = getLocalSettings();
+    return currentSettings[settingString];
 }
