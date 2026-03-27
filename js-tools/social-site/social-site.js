@@ -5,8 +5,21 @@ let getInfo = async () => {
 
     let socialMediaUrls = siteInformationObject["social-media-urls"];
     let socialMediaNames = Object.keys(socialMediaUrls);
+
+    return socialMediaNames;
 }
 
 let getSite = () => {
-    return window.browserData.url;
+    return window.browserData.domain;
+}
+
+let isSocialSite = async () => {
+    let userSite = getSite();
+    let socialSites = await getInfo();
+    return userSite in socialSites;
+}
+
+window.browserData = window.browserData || {};
+window.browserData.updateIsSocialSite = async () => {
+    window.browserData.isSocialSite = await isSocialSite();
 }

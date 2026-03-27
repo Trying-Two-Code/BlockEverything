@@ -1,4 +1,4 @@
-window.browserData = window.data || {};
+window.browserData = window.browserData || {};
 
 window.browserData.findURL = async () => {
     try{

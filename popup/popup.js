@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
     showButton(isBlocking);
 
     btn.addEventListener("click", async () => {
+        window.browserData.updateIsSocialSite();
+        console.log(window.browserData.isSocialSite);
+        
         isBlocking = !isBlocking;
 
         showButton(isBlocking);
